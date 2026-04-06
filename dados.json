@@ -1,0 +1,103 @@
+{
+  "families": [],
+
+  "people": [
+    { "id": 1, "name": "Adão", "birth": -4000, "death": -3070, "approximate": true },
+    { "id": 2, "name": "Eva", "birth": -4000, "death": -3000, "approximate": true },
+    { "id": 3, "name": "Caim", "birth": -3900, "death": -3000, "approximate": true },
+    { "id": 4, "name": "Abel", "birth": -3900, "death": -3800, "approximate": true },
+    { "id": 5, "name": "Sete", "birth": -3870, "death": -2960, "approximate": true },
+    { "id": 6, "name": "Noé", "birth": -3000, "death": -2000, "approximate": true },
+    { "id": 7, "name": "Abraão", "birth": -2000, "death": -1825, "approximate": true },
+    { "id": 8, "name": "Isaque", "birth": -1900, "death": -1710, "approximate": true },
+    { "id": 9, "name": "Jacó", "birth": -1830, "death": -1680, "approximate": true },
+    { "id": 10, "name": "José", "birth": -1760, "death": -1660, "approximate": true }
+  ],
+  "relations": [
+    { "from": 1, "to": 3 },
+    { "from": 1, "to": 4 },
+    { "from": 1, "to": 5 },
+
+    { "from": 5, "to": 6 },
+
+    { "from": 6, "to": 7 },
+
+    { "from": 7, "to": 8 },
+
+    { "from": 8, "to": 9 },
+
+    { "from": 9, "to": 10 }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Criação",
+      "year": -4000,
+      "approximate": true,
+      "people": [1, 2]
+    },
+    {
+      "id": 2,
+      "title": "Queda do homem",
+      "year": -3990,
+      "approximate": true,
+      "people": [1, 2]
+    },
+    {
+      "id": 3,
+      "title": "Caim mata Abel",
+      "year": -3800,
+      "approximate": true,
+      "people": [3, 4]
+    },
+    {
+      "id": 4,
+      "title": "Nascimento de Sete",
+      "year": -3870,
+      "approximate": true,
+      "people": [5]
+    },
+    {
+      "id": 5,
+      "title": "Dilúvio",
+      "year": -2500,
+      "approximate": true,
+      "people": [6]
+    },
+    {
+      "id": 6,
+      "title": "Chamado de Abraão",
+      "year": -1900,
+      "approximate": true,
+      "people": [7]
+    },
+    {
+      "id": 7,
+      "title": "Nascimento de Isaque",
+      "year": -1900,
+      "approximate": true,
+      "people": [8, 7]
+    },
+    {
+      "id": 8,
+      "title": "Jacó foge de Esaú",
+      "year": -1800,
+      "approximate": true,
+      "people": [9]
+    },
+    {
+      "id": 9,
+      "title": "José vendido ao Egito",
+      "year": -1700,
+      "approximate": true,
+      "people": [10]
+    },
+    {
+      "id": 10,
+      "title": "José governa o Egito",
+      "year": -1680,
+      "approximate": true,
+      "people": [10]
+    }
+  ]
+}

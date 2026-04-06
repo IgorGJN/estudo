@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Estudo Bíblico</title>
+
+  <!-- D3 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- vis-timeline -->
+  <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Estudo Bíblico</h1>
+
+<div class="controls">
+  <button onclick="exportData()">Exportar</button>
+  <input type="file" id="importFile">
+  <button onclick="importData()">Importar</button>
+</div>
+
+<div class="container">
+  <div id="tree"></div>
+  <div id="timeline"></div>
+</div>
+
+<h2>Personagens</h2>
+<div class="form">
+  <input id="name" placeholder="Nome">
+  <input id="birth" placeholder="Nascimento (ano)">
+  <input id="death" placeholder="Morte (ano)">
+  <label><input type="checkbox" id="approx"> Aproximado</label>
+
+  <br><br>
+
+  <label>Pai:</label>
+  <select id="parent"></select>
+  <label>Cônjuge:</label>
+  <select id="spouse"></select>
+
+  <br><br>
+
+  <button onclick="addOrUpdatePerson()">Salvar</button>
+  <button onclick="resetForm()">Limpar</button>
+</div>
+
+<ul id="peopleList"></ul>
+
+<h2>Acontecimentos</h2>
+<div class="form">
+  <input id="eventTitle" placeholder="Título">
+  <input id="eventYear" placeholder="Ano">
+  <input id="eventEnd" placeholder="Ano fim (opcional)">
+  <label><input type="checkbox" id="eventApprox"> Aproximado</label>
+
+  <br><br>
+
+  <label>Personagem:</label>
+  <select id="eventPerson"></select>
+
+  <br><br>
+
+  <button onclick="addEvent()">Adicionar Evento</button>
+</div>
+
+<ul id="eventList"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
