@@ -1,33 +1,84 @@
 {
-  "families": [],
-
   "people": [
     { "id": 1, "name": "Adão", "birth": -4000, "death": -3070, "approximate": true },
     { "id": 2, "name": "Eva", "birth": -4000, "death": -3000, "approximate": true },
-    { "id": 3, "name": "Caim", "birth": -3900, "death": -3000, "approximate": true },
-    { "id": 4, "name": "Abel", "birth": -3900, "death": -3800, "approximate": true },
+
+    { "id": 3, "name": "Caim" },
+    { "id": 4, "name": "Abel" },
     { "id": 5, "name": "Sete", "birth": -3870, "death": -2960, "approximate": true },
+
     { "id": 6, "name": "Noé", "birth": -3000, "death": -2000, "approximate": true },
-    { "id": 7, "name": "Abraão", "birth": -2000, "death": -1825, "approximate": true },
-    { "id": 8, "name": "Isaque", "birth": -1900, "death": -1710, "approximate": true },
-    { "id": 9, "name": "Jacó", "birth": -1830, "death": -1680, "approximate": true },
-    { "id": 10, "name": "José", "birth": -1760, "death": -1660, "approximate": true }
+    { "id": 7, "name": "Sem" },
+    { "id": 8, "name": "Cam" },
+    { "id": 9, "name": "Jafé" },
+
+    { "id": 10, "name": "Abraão", "birth": -2000, "death": -1825, "approximate": true },
+    { "id": 11, "name": "Sara" },
+    { "id": 12, "name": "Agar" },
+
+    { "id": 13, "name": "Isaque", "birth": -1900, "death": -1710, "approximate": true },
+    { "id": 14, "name": "Ismael" },
+
+    { "id": 15, "name": "Rebeca" },
+    { "id": 16, "name": "Jacó", "birth": -1830, "death": -1680, "approximate": true },
+    { "id": 17, "name": "Esaú" },
+
+    { "id": 18, "name": "Lia" },
+    { "id": 19, "name": "Raquel" },
+
+    { "id": 20, "name": "José", "birth": -1760, "death": -1660, "approximate": true },
+    { "id": 21, "name": "Benjamim" }
   ],
-  "relations": [
-    { "from": 1, "to": 3 },
-    { "from": 1, "to": 4 },
-    { "from": 1, "to": 5 },
 
-    { "from": 5, "to": 6 },
+  "families": [
+    {
+      "id": 1,
+      "husband": 1,
+      "wife": 2,
+      "children": [3, 4, 5]
+    },
 
-    { "from": 6, "to": 7 },
+    {
+      "id": 2,
+      "husband": 6,
+      "wife": null,
+      "children": [7, 8, 9]
+    },
 
-    { "from": 7, "to": 8 },
+    {
+      "id": 3,
+      "husband": 10,
+      "wife": 11,
+      "children": [13]
+    },
+    {
+      "id": 4,
+      "husband": 10,
+      "wife": 12,
+      "children": [14]
+    },
 
-    { "from": 8, "to": 9 },
+    {
+      "id": 5,
+      "husband": 13,
+      "wife": 15,
+      "children": [16, 17]
+    },
 
-    { "from": 9, "to": 10 }
+    {
+      "id": 6,
+      "husband": 16,
+      "wife": 18,
+      "children": [20]
+    },
+    {
+      "id": 7,
+      "husband": 16,
+      "wife": 19,
+      "children": [21]
+    }
   ],
+
   "events": [
     {
       "id": 1,
@@ -52,52 +103,45 @@
     },
     {
       "id": 4,
-      "title": "Nascimento de Sete",
-      "year": -3870,
-      "approximate": true,
-      "people": [5]
-    },
-    {
-      "id": 5,
       "title": "Dilúvio",
       "year": -2500,
       "approximate": true,
       "people": [6]
     },
     {
-      "id": 6,
+      "id": 5,
       "title": "Chamado de Abraão",
       "year": -1900,
       "approximate": true,
-      "people": [7]
+      "people": [10]
     },
     {
-      "id": 7,
+      "id": 6,
       "title": "Nascimento de Isaque",
       "year": -1900,
       "approximate": true,
-      "people": [8, 7]
+      "people": [13]
+    },
+    {
+      "id": 7,
+      "title": "Nascimento de Jacó e Esaú",
+      "year": -1830,
+      "approximate": true,
+      "people": [16, 17]
     },
     {
       "id": 8,
-      "title": "Jacó foge de Esaú",
-      "year": -1800,
-      "approximate": true,
-      "people": [9]
-    },
-    {
-      "id": 9,
       "title": "José vendido ao Egito",
       "year": -1700,
       "approximate": true,
-      "people": [10]
+      "people": [20]
     },
     {
-      "id": 10,
+      "id": 9,
       "title": "José governa o Egito",
       "year": -1680,
       "approximate": true,
-      "people": [10]
+      "people": [20]
     }
   ]
 }
